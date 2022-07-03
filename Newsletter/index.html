@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Newsletter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="project_logo.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="post">
+        <h1>Our Newsletter</h1>
+        <input type="name" name="name" class="name" placeholder="Name" required />
+        <input type="phone" name="phone"  class="phone" placeholder="Phone Number" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <button type="button" class="btt" onclick="openPopup()">
+          Subscribe Now
+        </button>
+      </form>
+      <div class="popup" id="popup">
+        <img src="check.png" alt="check" />
+        <h2>Thanks for Subscribing!</h2>
+        <p>Your informations have been successfully recieved.</p>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

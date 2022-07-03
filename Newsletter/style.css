@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btt {
+    padding: 10px 60px;
+    background: #5e005e;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    color: #ffff;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.popup {
+    width: 400px;
+    background: #ffff;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #181717;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    fill: #5e005e;
+}
+
+.popup h2 {
+    font-size: 30px;
+    margin: 30px 0 10px;
+    font-weight: 500;
+}
+
+form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+
+h1 {
+    width: 100%;
+    font-size: 50px;
+    margin: 30px 0 10px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.name {
+    width: 45%;
+    height: 50px;
+    outline: none;
+    color: #ffffff;
+    border: 2px solid #5e005e;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+.phone {
+    width: 45%;
+    height: 50px;
+    outline: none;
+    color: #ffffff;
+    border: 2px solid #5e005e;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    color: #ffffff;
+    border: 2px solid #5e005e;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    background: none;
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #5e005e;
+    color: #ffff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
